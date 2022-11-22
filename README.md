@@ -6,7 +6,7 @@ Make the conclusion from the result of the function whether there is a significa
 <br/> 
 
 ## Mathmetical Formula
-<br/> 
+
 $\hat{\beta}=(X^TX)^{-1}X^TY$
 <br/> 
 $\hat{Y}=\hat{\beta}X$
