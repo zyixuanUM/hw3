@@ -1,5 +1,8 @@
-## Mathmetical Formula
-=======
+##1. Instruction
+Compute the estimated coefficients and statistics from linear models.
+Make the conclusion from the result of the function whether there is a significant association between the response and the covariates.
+
+##2. Mathmetical Formula
 <br/> 
 *$\hat{\beta}=(X^TX)^{-1}X^TY$
 <br/> 
@@ -24,4 +27,8 @@
 *$t=\frac{\hat{\beta}}/{SE(\hat{\beta})}$
 <br/> 
 
+##3. Install
+npm install
 
+##4. Reference
+lm() function
