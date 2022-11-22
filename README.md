@@ -1,8 +1,11 @@
-##1. Instruction
+##Instruction
+<br/> 
 Compute the estimated coefficients and statistics from linear models.
+<br/> 
 Make the conclusion from the result of the function whether there is a significant association between the response and the covariates.
+<br/> 
 
-##2. Mathmetical Formula
+##Mathmetical Formula
 <br/> 
 $\hat{\beta}=(X^TX)^{-1}X^TY$
 <br/> 
@@ -27,10 +30,13 @@ $F=\frac{MSR}/{\hat{\sigma^2}}$
 $t=\frac{\hat{\beta}}/{SE(\hat{\beta})}$
 <br/> 
 
-##3. Install
+##Install
+<br/> 
 npm install
+<br/> 
 
-##4. Reference
+##Reference
+<br/> 
 lm() function
 
 
