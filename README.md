@@ -43,7 +43,7 @@ $F=\frac{MSR}{\hat{\sigma^2}}$
 <br/> 
 $t=\frac{\hat{\beta}}{SE(\hat{\beta})}$
 <br/> 
-$cov(Y,X)=\frac{1}{n-1}\Sigma{(Y_i-\bar{Y})(X_i-\bar{X}}$
+$cov(Y,X)=\frac{1}{n-1}\Sigma{(Y_i-\bar{Y})(X_i-\bar{X})}$
 
 ## Install
 <br/> 
