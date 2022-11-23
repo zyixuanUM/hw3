@@ -1,5 +1,7 @@
 test_that("multiplication works", {
-  rm(list = c("linear_model"))
+  X <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+  Y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+  data <- data.frame(Y,X)
   lm1 <- linear_model(Y~X, data)
   list1 <- as.data.frame(lm1[[1]])
   fit<-lm(Y~X)
