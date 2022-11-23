@@ -7,8 +7,7 @@
 #'
 #'@return The estimated coefficients and statistics of t test and F test
 #'
-#'@examples
-#'X <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+#'@examples X <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
 #'Y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
 #'data <- data.frame(Y,X)
 #'linear_model(Y~X, data)
@@ -21,7 +20,7 @@
 #'
 
 linear_model <- function(formula, data){
-  attach(data)
+  attach(data, warn.conflicts = FALSE)
   Y <- model.frame(formula)[,1]
   X <- model.matrix(formula)
   n <- nrow(X)
