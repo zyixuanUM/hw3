@@ -11,6 +11,7 @@ LazyData: true
 Imports: Rcpp (>= 1.0.9)
 LinkingTo: Rcpp
 Suggests: 
+    covr,
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)

@@ -39,6 +39,6 @@ list1 <- as.data.frame(lm1[[1]])
 fit<-lm(Y~X)
 sfit <- summary(fit)
 compare_list1 <- as.data.frame(sfit$coefficients)
-all.equal(list1[,1],compare_list1[,1], tolerance=1.5e-06) #estimated coefficients
+all.equal(list1[,1],compare_list1[,1], tolerance=1.5e-05) #estimated coefficients
 
 ```
