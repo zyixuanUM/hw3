@@ -79,6 +79,7 @@ Use all.equal() and expect_equal() in testthat to compare the results between li
 ## Reference
 <br/> 
 Linear regression model lm() function.
+<br/> 
 Coviance cov() function.
 
 
