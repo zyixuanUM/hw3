@@ -1,0 +1,44 @@
+---
+title: "tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE
+)
+```
+
+```{r setup}
+library(hw3zyx)
+```
+
+```{r}
+X <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+Y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+data<-data.frame(Y,X)
+linear_model(Y~X, data)
+```
+
+```{r}
+x <- cbind(mtcars$disp, mtcars$drat)
+y <- mtcars$mpg
+linear_model(y~x, mtcars)
+```
+
+
+```{r}
+lm1 <- linear_model(Y~X, data)
+list1 <- as.data.frame(lm1[[1]])
+fit<-lm(Y~X)
+sfit <- summary(fit)
+compare_list1 <- as.data.frame(sfit$coefficients)
+all.equal(list1[,1],compare_list1[,1], tolerance=1.5e-06) #estimated coefficients
+
+```
