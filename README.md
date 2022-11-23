@@ -48,12 +48,17 @@ npm install
 ## Test Cases
 <br/>
 X <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+<br/>
 Y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+<br/>
 data <- data.frame(Y,X)
+<br/>
 linear_model(Y~X, data)
 
 x <- cbind(mtcars$disp, mtcars$drat)
+<br/>
 y <- mtcars$mpg
+<br/>
 linear_model(y~x, mtcars)
 
 ## Comparison
