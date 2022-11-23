@@ -12,10 +12,10 @@ linear_model(formula, data)
 \item{data}{input the data frame}
 }
 \value{
-the estimated coefficients and statistics of t test and F test
+The estimated coefficients and statistics of t test and F test
 }
 \description{
-Compute the estimated coefficients and statistics from linear models
+Compute the estimated coefficients and statistics from linear models.
 }
 \examples{
 X <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)

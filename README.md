@@ -1,8 +1,11 @@
+
 ## Instruction
+<br/> 
+Linear regression is a statistical model that analyzes the relationship between variables.
 <br/> 
 Compute the estimated coefficients and statistics from linear models.
 <br/> 
-Make the conclusion from the result of the function whether there is a significant association between the response and the covariates.
+Make the conclusion from the result of the function whether there is a significant association between the response and the variables.
 <br/> 
 
 ## Mathmetical Formula

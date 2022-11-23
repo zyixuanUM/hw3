@@ -10,19 +10,21 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP _hw3zyx_rcpp_hello() {
+// cov_yx
+double cov_yx(NumericVector y, NumericVector x);
+RcppExport SEXP _hw3zyx_cov_yx(SEXP ySEXP, SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello());
+    Rcpp::traits::input_parameter< NumericVector >::type y(ySEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(cov_yx(y, x));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_hw3zyx_rcpp_hello", (DL_FUNC) &_hw3zyx_rcpp_hello, 0},
+    {"_hw3zyx_cov_yx", (DL_FUNC) &_hw3zyx_cov_yx, 2},
     {NULL, NULL, 0}
 };
 
