@@ -56,3 +56,9 @@ all.equal(list3[,2],round(compare_list3[,2],4)) # R-squared
 all.equal(list3[,3],round(compare_list3[,3],4)) # adjusted R-squared
 
 ```
+
+```{r}
+cov_yx(Y,X) #run R cpp function
+all.equal(cov_yx(Y,X),cov(X,Y))
+```
+

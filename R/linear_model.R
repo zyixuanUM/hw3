@@ -18,6 +18,7 @@
 #'
 #'@export
 #'
+
 linear_model <- function(formula, data){
   attach(data, warn.conflicts = FALSE)
   Y <- model.frame(formula)[,1]
