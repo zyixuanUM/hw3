@@ -97,6 +97,14 @@ linear_model(y~x, mtcars)
 #> [1,] 3.2318 0.731 0.7125
 ```
 
+3.
+```{r}
+cov_yx(Y,X) #run R cpp function
+all.equal(cov_yx(Y,X),cov(X,Y))
+#> [1] 294.4
+#> [1] TRUE
+```
+
 <br/> \## Comparison <br/> Use all.equal() and expect_equal() in
 testthat to compare the results between linear_model() and lm(). <br/>
 
