@@ -5,6 +5,10 @@ Compute the estimated coefficients and statistics from linear models.
 Make the conclusion from the result of the function whether there is a significant association between the response and the covariates.
 <br/> 
 
+Rcpp function
+<br/>
+Compute the covariance between y and x.
+
 ## Mathmetical Formula
 
 $\hat{\beta}=(X^TX)^{-1}X^TY$
@@ -39,6 +43,7 @@ $F=\frac{MSR}{\hat{\sigma^2}}$
 <br/> 
 $t=\frac{\hat{\beta}}{SE(\hat{\beta})}$
 <br/> 
+$cov(Y,X)=\frac{1}{n-1}\Sigma{(Y_i-\bar{Y})(X_i-\bar{X}}$
 
 ## Install
 <br/> 
@@ -61,6 +66,11 @@ y <- mtcars$mpg
 <br/>
 linear_model(y~x, mtcars)
 
+<br/>
+cov_yx(Y,X) #run R cpp function
+<br/>
+all.equal(cov_yx(Y,X),cov(X,Y))
+
 ## Comparison
 <br/> 
 Use all.equal() and expect_equal() in testthat to compare the results between linear_model() and lm().
@@ -69,5 +79,6 @@ Use all.equal() and expect_equal() in testthat to compare the results between li
 ## Reference
 <br/> 
 Linear regression model lm() function.
+Coviance cov() function.
 
 
