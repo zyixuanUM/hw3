@@ -29,7 +29,7 @@ $\hat{\sigma^2}=\frac{\hat{\epsilon}^T\hat{\epsilon}}{n-p}$
 <br/> 
 $R^2=\frac{SSR}{SSY}$
 <br/> 
-$R^2_{adjusted}=1-frac{SSE/(n-p)}{SSY/(n-1)}$
+$R^2_{adjusted}=1-\frac{SSE/(n-p)}{SSY/(n-1)}$
 <br/> 
 $Var(\hat{\beta})=X^TX\hat{\sigma^2}$
 <br/> 
